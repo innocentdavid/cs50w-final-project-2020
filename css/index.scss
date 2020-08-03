@@ -1,0 +1,63 @@
+$base-color: rgb(7, 117, 81);
+$base-color2: rgb(79, 184, 149);
+
+*,
+p {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+body {
+  width: 100vw;
+  padding-right: 1rem;
+  overflow-x: hidden;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.top-nav {
+  background-color: $base-color;
+  color: white;
+
+  .account-summary {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+
+    div {
+      padding: 0.5rem 2rem;
+      border-radius: 30px;
+      border: 1px solid;
+    }
+  }
+}
+
+.left-sidebar {
+    background: $base-color2;
+    border: 1px solid;
+  li {
+    cursor: pointer;
+    z-index: 10;
+  }
+  li:hover {
+    transform: scale(1.2);
+  }
+}
+
+.main-nav ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.tip ul {
+  list-style-type: disc;
+}
