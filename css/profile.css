@@ -8,7 +8,7 @@
 body {
   width: 100vw;
   overflow-x: hidden;
-  padding: auto .5rem;
+  padding: auto 0.5rem;
 }
 
 ul {
@@ -18,8 +18,8 @@ ul {
 header {
   background: #11b880;
   color: white;
-  padding: .5rem;
-  padding-bottom: .5rem;
+  padding: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 
 .profile-img {
@@ -52,7 +52,7 @@ header {
 
 .top-nav {
   border-bottom: 1px solid #11b880;
-  padding: 1rem .5rem;
+  padding: 1rem 0.5rem;
 }
 
 .top-nav ul {
@@ -68,7 +68,7 @@ header {
 
 .top-nav ul li {
   border: 1px solid #11b880;
-  padding: .2rem .5rem;
+  padding: 0.2rem 0.5rem;
   border-radius: 10px;
 }
 
@@ -82,7 +82,11 @@ header {
   display: inline-block;
   margin: 0.5rem 1rem;
   border: 1px solid #11b880;
-  padding: .1rem .5rem;
+  padding: 0.1rem 0.5rem;
+}
+
+.exp-catg ul li a {
+  color: #11b880;
 }
 
 .add-catg-btn {
@@ -92,7 +96,33 @@ header {
   z-index: 10;
 }
 
-.add-exp-box, .add-src-box {
+.add-box-cont {
+  position: relative;
+}
+
+.add-box-cont .toggle-add-box {
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  right: 4rem;
+  font-size: 1.5rem;
+  display: none;
+}
+
+@media (max-width: 766px) {
+  .toggle-add-box {
+    right: 1rem !important;
+  }
+  #piechart {
+    height: 300px !important;
+  }
+  .sidebar {
+    margin-top: 2rem;
+  }
+}
+
+.add-exp-box,
+.add-src-box {
   display: none;
   -webkit-transition: 10s ease-in-out;
   transition: 10s ease-in-out;
@@ -103,7 +133,7 @@ header {
   width: 45%;
   padding: 0.5rem;
   border: 1px solid;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(17, 184, 128, 0.9);
   color: white;
   border-radius: 30px;
   display: -webkit-box;
@@ -135,8 +165,12 @@ header {
   background: #f7f7f7;
 }
 
-.catg-summary li {
-  margin: 1rem 0;
+.catg-summary .catg-sum-caret i:nth-child(2) {
+  display: none;
+}
+
+.catg-summary .catgSumBox {
+  display: none;
 }
 
 .tips ul {
@@ -163,5 +197,11 @@ header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.pieSummary {
+  height: 400px;
+  border: 1px solid;
+  overflow-y: auto;
 }
 /*# sourceMappingURL=profile.css.map */
