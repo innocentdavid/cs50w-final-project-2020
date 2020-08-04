@@ -38,6 +38,7 @@ function drawChart() {
         ['Work',     40],
         ['Nap',      10],
         ['Eat',  11],
+        ['Eat',  11],
         ['Watch TV', 14],
         ['Watch TV', 14],
         ['Sleep',    15]
