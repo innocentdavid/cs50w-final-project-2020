@@ -34,21 +34,21 @@ function compressCatg(catgId) {
 function drawChart() {
 
     var data = google.visualization.arrayToDataTable([
-        ['Task', 'Hours per Day'],
-        ['Work',     11],
-        ['Nap',      2],
-        ['Eat',  2],
-        ['Watch TV', 2],
-        ['Sleep',    7]
-    ]);
-
-    var options = {
-        title: 'My Monthly Expenditures'
-    };
+        ['Task', 'total expenditure'],
+        ['Work',     40],
+        ['Nap',      10],
+        ['Eat',  11],
+        ['Watch TV', 14],
+        ['Watch TV', 14],
+        ['Sleep',    15]
+    ]);    
 
     var chart = new google.visualization.PieChart(document.getElementById('piechart'));
 
-    chart.draw(data, options);
+    chart.draw(data, {
+        title: 'My Weekly Expenditures',
+        is3D: true,
+      });
 }
 
 $(document).ready(function () {
