@@ -9,93 +9,106 @@
 
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="css/index.css">
 </head>
 
 <body>
-  <div class="container-fluid top-nav">
-    <div class="row">
-      <div class="col-3 d-flex justify-centent-center align-items-center">
-        <h2>LOGO</h2>
-      </div>
-      <div class="col-9">
-        <div class="row">
-          <div class="col-9">
-            <center>
-              <h3 style="margin: .5rem 0;">Dashboard</h3>
-            </center>
-          </div>
-          <div class="col-3 d-flex justify-content-end align-items-center">
-            <i class="fa fa-bell" aria-hidden="true"></i>
-          </div>
+  <header>
+    <center>
+      <h2>Dashboard</h2>
+    </center>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-2 profile-img">
+          <img src="images/IMG_20200627_181056.jpg" width="100%" height="100%" alt="sl">
         </div>
-        <div class="row">
-          <div class="col-9">
-            <p>Good day, <span class="cursor-pointer">User Name</span></p>
-            <p><small>Last Login, 02/08/2020 08:46 PM.</small></p>
-          </div>
-          <div class="col-3 d-flex justify-content-end align-items-center cursor-pointer">
-            History &nbsp;<i class="fa fa-history" aria-hidden="true"></i>
+        <div class="col-10">
+          <div class="row">
+            <div class="col-12 d-flex justify-content-end logo-cont">
+              <h3>LOGO</h3>
+            </div>
+            <div class="col-12">
+              <span>Welcome, <b>Paul Innocent</b></span>
+            </div>
+            <div class="col-12 d-flex justify-content-between">
+              <span style="font-size: .7rem;">Acc. bal. <b>N <span>23, 480 .00</span> K</b></span>
+              <a href="profile.html" style="olor:white; padding: 0 .3rem; border:1px solid; font-size: .7rem;"><span>Profile</span> <i class="fa fa-arrow-right"></i></a>
+            </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="account-summary">
-      <div>
-        <b>
-          <p>Account: <span>00229485944</span></p>
-          <p>N <span>2, 350, 984 .98 </span>K</p>
-        </b>
-      </div>
-    </div>
-    <br>
-  </div>
+  </header>
   <!-- header -->
 
   <div id="main" class="container-fluid">
     <div class="row">
-      <div class="col-1 left-sidebar">
+      <div class="col-12 col-md-1 left-sidebar">
         <ul>
           <li><a href="">
-              <center>
-                <div><i class="fa fa-home" aria-hidden="true"></i></div>Home
-              </center>
-            </a></li>
+            <center>
+              <div>
+                <i class="fa fa-home" aria-hidden="true"></i>
+              </div>
+              Home
+            </center>
+          </a></li>
           <li>
             <center>
-              <div><i class="fa fa-user" aria-hidden="true"></i></div>Profile
+              <div>
+                <i class="fa fa-user" aria-hidden="true"></i>
+              </div>
+              Profile
             </center>
           </li>
           <li>
             <center>
-              <div><i class="fa fa-share" aria-hidden="true"></i></div>Refer
+              <div>
+                <i class="fa fa-share" aria-hidden="true"></i>
+              </div>
+              Refer
             </center>
           </li>
           <li>
             <center>
-              <div><i class="fa fa-money" aria-hidden="true"></i></div>Loan
+              <div>
+                <i class="fa fa-money" aria-hidden="true"></i>
+              </div>
+              Loan
             </center>
           </li>
           <li>
             <center>
-              <div><i class="fa fa-star" aria-hidden="true"></i></div><small>Investor Relation</small>
+              <div>
+                <i class="fa fa-star" aria-hidden="true"></i>
+              </div>
+              <small>Investor Relation</small>
             </center>
           </li>
           <li>
             <center>
-              <div><i class="fa fa-phone" aria-hidden="true"></i></div>Contact Us
+              <div>
+                <i class="fa fa-phone" aria-hidden="true"></i>
+              </div>
+              Contact Us
             </center>
           </li>
           <li>
             <center>
-              <div><i class="fa fa-users" aria-hidden="true"></i></div>About us
+              <div>
+                <i class="fa fa-users" aria-hidden="true"></i>
+              </div>
+              About us
             </center>
           </li>
           <li>
             <center>
-              <div><i class="fa fa-gear" aria-hidden="true"></i></div>Settings
+              <div>
+                <i class="fa fa-gear" aria-hidden="true"></i>
+              </div>
+              Settings
             </center>
           </li>
           <li>
@@ -109,37 +122,45 @@
             <ul>
               <li>
                 <center><i class="fa fa-money" aria-hidden="true"></i>
-                  <div>Transfer</div>
+                  <div>
+                    Transfer
+                  </div>
                 </center>
               </li>
               <li>
                 <center><i class="fa fa-mobile" aria-hidden="true"></i>
-                  <div>Airtime<i class="fa fa-caret-down" aria-hidden="true"></i></div>
+                  <div>
+                    Airtime<i class="fa fa-caret-down" aria-hidden="true"></i>
+                  </div>
                 </center>
               </li>
               <li>
                 <center><i class="fa fa-paper-plane" aria-hidden="true"></i>
-                  <div>Pay Bills</div>
+                  <div>
+                    Pay Bills
+                  </div>
                 </center>
               </li>
               <li>
                 <center><i class="fa fa-money" aria-hidden="true"></i>
-                  <div>Claim Cheque</div>
+                  <div>
+                    Claim Cheque
+                  </div>
                 </center>
               </li>
             </ul>
           </div>
           <div class="col-12">
             <div class="row">
-              <div class="col-9" style="border-right: 1px solid;">
+              <div class="col-md-9" style="border-right: 1px solid;">
                 <div class="row">
                   <div class="col-12">
                     <div class="row">
-                      <div class="col-9 my-statistic">
+                      <div class="col-md-9 my-statistic">
                         <h3>My statistic</h3>
                         <hr>
                       </div>
-                      <div class="col-3 recent-transaction">
+                      <div class="col-md-3 recent-transaction">
                         <center>
                           <h6 style="font-size: .8rem;">Recent Transactions</h6>
                           <ul style="font-size: .8rem;">
@@ -168,7 +189,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-3 right-sidebar">
+              <div class="col-md-3 right-sidebar">
                 <div class="contact-us">
                   <center>
                     <h6>CONTACT US</h6>
@@ -181,14 +202,20 @@
                 </div>
                 <hr>
 
-                <div>Ads</div>
+                <div>
+                  Ads
+                </div>
                 <hr>
 
-                <div>Ads</div>
+                <div>
+                  Ads
+                </div>
               </div>
             </div>
           </div>
-          <div class="col-12" id="footer">footer (follow us and newsletter</div>
+          <div class="col-12" id="footer">
+            footer (follow us and newsletter
+          </div>
         </div>
       </div>
     </div>

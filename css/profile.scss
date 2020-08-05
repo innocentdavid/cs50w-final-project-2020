@@ -1,4 +1,4 @@
-$base-color: rgb(17, 184, 128);
+$ase-color: rgb(17, 184, 128);
 $test: 1px solid;
 
 * {
@@ -75,11 +75,11 @@ header {
     }
   }
 }
-@media (max-width: 766px){
-  .top-nav{
-    ul{
+@media (max-width: 766px) {
+  .top-nav {
+    ul {
       padding-left: 5.5rem;
-      li{
+      li {
         border: none;
       }
     }
