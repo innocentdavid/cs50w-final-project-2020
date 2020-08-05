@@ -15,6 +15,20 @@
 </head>
 
 <body>
+  <div class="pop-model">
+    <div class="main-model">
+      <div class="model">
+        <div class="model-header">
+          <span class="logo" style="font-weight: 900; font-size: 1.5rem;">LOGO</span>
+          <span onclick="closePopModal()" class="btn-sm btn-danger" style=" cursor:pointer">Close</span>
+        </div>
+
+        <div class="modal-body"></div>
+
+        <div class="modal-footer"></div>
+      </div>
+    </div>
+  </div>
   <header>
     <center>
       <h2>Dashboard</h2>
@@ -34,7 +48,7 @@
             </div>
             <div class="col-12 d-flex justify-content-between">
               <span style="font-size: .7rem;">Acc. bal. <b>N <span>23, 480 .00</span> K</b></span>
-              <a href="profile.html" style="olor:white; padding: 0 .3rem; border:1px solid; font-size: .7rem;"><span>Profile</span> <i class="fa fa-arrow-right"></i></a>
+              <a href="profile.html" style="color:white; padding: 0 .3rem; border:1px solid; font-size: .7rem;"><span>Profile</span> <i class="fa fa-arrow-right"></i></a>
             </div>
           </div>
         </div>
@@ -45,7 +59,7 @@
 
   <div id="main" class="container-fluid">
     <div class="row">
-      <div class="col-12 col-md-1 left-sidebar">
+      <div class="col-12 col-md-1 left-sidebar" style="border: 1px solid;">
         <ul>
           <li><a href="">
             <center>
@@ -129,7 +143,7 @@
               </li>
               <li>
                 <center><i class="fa fa-mobile" aria-hidden="true"></i>
-                  <div>
+                  <div class="d-flex justify-content-center align-items-center">
                     Airtime<i class="fa fa-caret-down" aria-hidden="true"></i>
                   </div>
                 </center>
@@ -137,14 +151,14 @@
               <li>
                 <center><i class="fa fa-paper-plane" aria-hidden="true"></i>
                   <div>
-                    Pay Bills
+                    Pay&nbsp;Bills
                   </div>
                 </center>
               </li>
               <li>
                 <center><i class="fa fa-money" aria-hidden="true"></i>
                   <div>
-                    Claim Cheque
+                    Claim&nbsp;Cheque
                   </div>
                 </center>
               </li>
@@ -152,7 +166,7 @@
           </div>
           <div class="col-12">
             <div class="row">
-              <div class="col-md-9" style="border-right: 1px solid;">
+              <div class="col-md-9">
                 <div class="row">
                   <div class="col-12">
                     <div class="row">
@@ -164,15 +178,16 @@
                         <center>
                           <h6 style="font-size: .8rem;">Recent Transactions</h6>
                           <ul style="font-size: .8rem;">
-                            <li><small>+ 30,000 .00</small></li>
-                            <li><small>+ 30,000 .00</small></li>
-                            <li><small>+ 30,000 .00</small></li>
-                            <li><small>+ 30,000 .00</small></li>
-                            <li><small>+ 30,000 .00</small></li>
-                            <li><small>+ 30,000 .00</small></li>
-                            <li><small>+ 30,000 .00</small></li>
-                            <li><small>+ 30,000 .00</small></li>
-                            <li><small>+ 30,000 .00</small></li>
+                            <a class="rTransc" onclick="rTransc('1')" id="1" href="#"><span>+</span> N<span>20,000.89</span></a>
+                            <a class="rTransc" onclick="rTransc('2')" id="2" href="#"><span>-</span> N<span>20,000.89</span></a>
+                            <a class="rTransc" onclick="rTransc('3')" id="3" href="#"><span>+</span> N<span>20,000.89</span></a>
+                            <a class="rTransc" onclick="rTransc('4')" id="4" href="#"><span>+</span> N<span>20,000.89</span></a>
+                            <a class="rTransc" onclick="rTransc('5')" id="5" href="#"><span>-</span> N<span>20,000.89</span></a>
+                            <a class="rTransc" onclick="rTransc('6')" id="6" href="#"><span>-</span> N<span>20,000.89</span></a>
+                            <a class="rTransc" onclick="rTransc('7')" id="7" href="#"><span>-</span> N<span>20,000.89</span></a>
+                            <a class="rTransc" onclick="rTransc('8')" id="8" href="#"><span>+</span> N<span>20,000.89</span></a>
+                            <a class="rTransc" onclick="rTransc('9')" id="9" href="#"><span>-</span> N<span>20,000.89</span></a>
+                            <a class="rTransc" onclick="rTransc('10')" id="10" href="#"><span>+</span> N<span>20,000.89</span></a>
                           </ul>
                         </center>
                       </div>
